@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff1f6;
+    color: #44313d;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #ed9fbe, #c8a9f4);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.welcome {
+    background: #fce0ec;
+    padding: 22px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(130, 70, 100, 0.09);
+}
+
+h2 {
+    color: #a34e7c;
+    margin-bottom: 12px;
+}
+
+#chatBox {
+    height: 240px;
+    overflow-y: auto;
+    background: #fff8fb;
+    border: 1px solid #f1d7e4;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.message {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+.bot {
+    background: #f8dfec;
+    margin-right: 25px;
+}
+
+.user {
+    background: #e7e0ff;
+    margin-left: 25px;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #e5bfd3;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    padding: 11px 15px;
+    border-radius: 9px;
+    background: #d86e9d;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #b95182;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #8c4771;
+    outline-offset: 2px;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#taskList li {
+    padding: 10px;
+    background: #fff4f8;
+    margin: 8px 0;
+    border-radius: 9px;
+    overflow-wrap: anywhere;
+}
+
+#taskList input {
+    flex: initial;
+    margin-right: 8px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+#moodResult,
+#chatStatus,
+#progress {
+    margin-top: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f6dce8;
+    color: #70445c;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    form {
+        flex-wrap: wrap;
+    }
+
+    form input {
+        width: 100%;
+        flex-basis: 65%;
+    }
+}

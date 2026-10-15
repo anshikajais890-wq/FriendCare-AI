@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FriendCare AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💗 FriendCare AI</h1>
+        <p>Your personal study and daily-life companion</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Hello, Friend! 🌸</h2>
+            <p>Share your thoughts, plan your studies, and take care of yourself.</p>
+        </section>
+
+        <section class="card">
+            <h2>💬 Chat with Your AI Friend</h2>
+
+            <div id="chatBox">
+                <p class="bot message">
+                    Hi! I'm here to help you. What is on your mind today?
+                </p>
+            </div>
+
+            <form id="chatForm">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Write your message..."
+                    required
+                >
+                <button type="submit">Send</button>
+            </form>
+
+            <p id="chatStatus"></p>
+        </section>
+
+        <section class="card">
+            <h2>📚 Study Planner</h2>
+
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your study task..."
+                    required
+                >
+                <button type="submit">Add Task</button>
+            </form>
+
+            <ul id="taskList"></ul>
+            <p id="progress">0 tasks completed</p>
+        </section>
+
+        <section class="card">
+            <h2>🌷 How are you feeling?</h2>
+
+            <div class="mood-buttons">
+                <button type="button" data-mood="Happy">😊 Happy</button>
+                <button type="button" data-mood="Okay">🙂 Okay</button>
+                <button type="button" data-mood="Tired">😴 Tired</button>
+                <button type="button" data-mood="Stressed">😟 Stressed</button>
+            </div>
+
+            <p id="moodResult">Choose your mood for a little encouragement.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💗 for a friend | FriendCare AI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
